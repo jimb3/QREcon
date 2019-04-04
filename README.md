@@ -17,7 +17,7 @@ devtools::install_github("jimb3/QREcon")
 Example
 -------
 
-This is a basic example showing how to :
+This is a example showing how to use QREcon returning a list:
 
 ``` r
 ## example returning a list with Q and R
@@ -50,4 +50,28 @@ t(qr$q) %*% qr$q
 #>      [,1] [,2]
 #> [1,]    1    0
 #> [2,]    0    1
+```
+
+This is a example showing how to use QREcon when result in stored in matrices passed to the routine:
+
+``` r
+library(QREcon)
+# same matrix as in other example
+x <- matrix(c(1.,1.,1.,2.,3.,5.), 3, 2)
+# allocate memory for q and r
+q <- matrix(0., 3, 2)
+r <- matrix(0., 2, 2)
+# call QR decomposition routine
+QREcon(x, q, r)
+#> [1] 0
+# display q and r. Should be same as above.
+q
+#>            [,1]       [,2]
+#> [1,] -0.5773503  0.6172134
+#> [2,] -0.5773503  0.1543033
+#> [3,] -0.5773503 -0.7715167
+r
+#>           [,1]      [,2]
+#> [1,] -1.732051 -5.773503
+#> [2,]  0.000000 -2.160247
 ```
