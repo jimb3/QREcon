@@ -1,0 +1,47 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+# QREcon
+
+The goal of QREcon is to be simple alternative to doing QR decomposition in R that is
+intuitive and easy to use.
+
+## Installation
+
+You can install the released version of QREcon from [github](https://github.com) with:
+
+``` r
+devtools::install_github("jimb3/QREcon")
+```
+
+## Example
+
+This is a basic example showing how to :
+
+```{r example}
+## example returning a list with Q and R
+library(QREcon)
+# matrix to perform QR decomposition on
+x <- matrix(c(1.,1.,1.,2.,3.,5.), 3, 2)
+# call to QR decomposition routine
+qr <- QREcon(x)
+# view result, if q and r are NUll decomposition failed
+qr
+# checks if result is correct
+# should be x
+qr$q %*% qr$r
+# should be identity matrix
+t(qr$q) %*% qr$q
+```
+
