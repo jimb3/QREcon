@@ -17,6 +17,9 @@ knitr::opts_chunk$set(
 The goal of QREcon is to be simple alternative to doing QR decomposition in R that is
 intuitive and easy to use.
 
+[![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/jimb3/QREcon?branch=master&svg=true)](https://ci.appveyor.com/project/jimb3/QREcon)
+[![Travis build status](https://travis-ci.org/jimb3/QREcon.svg?branch=master)](https://travis-ci.org/jimb3/QREcon)
+
 ## Installation
 
 You can install the released version of QREcon from [github](https://github.com) with:
