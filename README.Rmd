@@ -19,6 +19,7 @@ intuitive and easy to use.
 
 [![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/jimb3/QREcon?branch=master&svg=true)](https://ci.appveyor.com/project/jimb3/QREcon)
 [![Travis build status](https://travis-ci.org/jimb3/QREcon.svg?branch=master)](https://travis-ci.org/jimb3/QREcon)
+[![Coverage status](https://codecov.io/gh/jimb3/QREcon/branch/master/graph/badge.svg)](https://codecov.io/github/jimb3/QREcon?branch=master)
 
 ## Installation
 
